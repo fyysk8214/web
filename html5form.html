@@ -1,0 +1,56 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<body>
+   <form>
+        date: <input type="date" />  <br />
+        datetime: <input type="datetime" />  <br />
+        datetime-local: <input type="datetime-local" />  
+		<br />
+        month: <input type="month" />  <br />
+        time: <input type="time" />  <br />
+        week: <input type="week" />  <br />
+        color: <input type="color" />  <br />
+        email: <input type="email" />  <br />
+        tel: <input type="tel" />  <br />
+        search: <input type="search" />  <br />
+        range: <input type="range" />  <br />
+        number: <input type="number" />  <br />
+        url: <input type="url" />  <br />
+        <input type="submit" /> 
+       
+     <hr>
+    <h2>고객의소리</h2> <!--설문-->
+     아이디: <input type="text" name="name"> <br>
+        구매번호: <input type="text" name="number" size="10"> <br>
+        패스워드: <input type="password" name="pass"><br>
+        <form name="input" action="getfeedback.jsp" method="get">
+            제품을 평가해주세요. <br>
+            <textarea name="feedback" cols="50" rows="5"></textarea><br>
+            <input type="submit" name="submit" value="제출">
+            <input type="reset" name="reset" value="초기화">
+            <!--sumbit은 패이지를 새로고침/reset은 새로고침 없이 초기화-->
+        <hr>
+        <h2>선호도조사</h2> <!--선호도조사(체크박스)-->
+        
+            성별:
+            <input type="radio" name="gender" value="male">남성
+            <input type="radio" name="gender" value="female">여성<br>
+            과일선택:
+            <input type="checkbox" name="fruits" value="apple" >사과
+            <input type="checkbox" name="fruits" value="grape" >포도
+            <input type="checkbox" name="fruits" value="orang" >오렌지
+            <input type="button" value="누루실?" onclick="alert('뭘봐')">
+            <hr><br>
+            <button type="button"><img src="./ps.jpg" alt="no img"></button>
+        </form>
+</body>
+</html>
