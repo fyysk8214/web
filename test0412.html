@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" name="form1">
+        이름을 입력하세요:<input type="text" required placeholder="이름을 입력하세요."><br>
+        자기소개을 입력하세요:<input type="text" required placeholder="자기소개를 입력하세요."><br>
+         제일 좋아하는색을 고르세요: <input type="color"><br>
+         키를 입력하세요: <input type="number" min="140" max="200" step="5" value="150" name="height"><br>
+         <input type="range" min="1" max="10"  value="5" >
+        <INput type="submit" value="제출" name="submit"></INput>
+        <INput type="reset" value="초기화" name="reset" onclick="alert('제출완료')"></INput>
+    </form>
+    <form action=""><!--강제 선택-->
+        <h4>내 최에는?</h4>
+        <select name="ch" id="ch_1">
+            <option value="1">미노리</option>
+            <option value="2">하루카</option>
+            <option value="3">아이리</option>
+            <option value="4">시즈쿠</option>
+        </select>
+    </form>
+    <!--데이터 리스트 연습 질문 (보조해줌)-->
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="크롬"></option>
+        <option value="엣지"></option>
+        <option value="사파리"></option>
+        <option value="파이어폭스"></option>
+        <option value="오페라"></option>
+    </datalist><hr>
+<!--필드 리스트 (구루핑 가능!)-->
+<h1>2023 3월 모의고사</h1>
+<hr>
+<h2>다음 보기중 옳은것을 고르시오</h2>
+<form method="post" name="form1">
+    <fieldset>
+        <legend><보기></legend>
+        <img src="수학문제.PNG" alt=""><br>
+        1️⃣번<input type="radio" name="answer" value="1"><br>
+        2️⃣번<input type="radio" name="answer" value="2"><br>
+        3️⃣번<input type="radio" name="answer" value="3"><br>
+        4️⃣번<input type="radio" name="answer" value="4"><br>
+        5️⃣번<input type="radio" name="answer" value="5"><br>
+        서슬형 답안을 제출해 주세욘. <br>
+        <input type="file" accept="image/jpg, image/png">
+    </fieldset>
+</form>
+</body>
+</html>
