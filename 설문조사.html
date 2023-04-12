@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>급식설문조사</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>만족도 설문조사</h1>
+    </header>
+    <h2>오늘 급식 평가</h2>
+    <form name="input" action="getfeedback.jsp" method="get">
+        날자: <input type="date" name="date1" value="day">
+<table border="1">
+<tr><td>항목</td><td>매우만족</td><td>만족</td><td>보통</td><td>불만족</td><td>메우불만족</td></tr>
+<tr><td>양</td><td><center><input type="radio" name="formy" value="vg"></center></td><td><center><input type="radio" name="formy" value="g"></center></td><td><center><input type="radio" name="formy" value="n"></center></td><td><center><input type="radio" name="formy" value="b"></center></td><td><center><input type="radio" name="formy" value="vb"></center></td></tr>
+<tr><td>맛</td><td><center><input type="radio" name="formd" value="vg"></center></td><td><center><input type="radio" name="formd" value="g"></center></td><td><center><input type="radio" name="formd" value="n"></center></td><td><center><input type="radio" name="formd" value="b"></center></td><td><center><input type="radio" name="formd" value="vb"></center></td></tr>
+<tr><td>청결도</td><td><center><input type="radio" name="formc" value="vg"></center></td><td><center><input type="radio" name="formc" value="g"></center></td><td><center><input type="radio" name="formc" value="n"></center></td><td><center><input type="radio" name="formc" value="b"></center></td><td><center><input type="radio" name="formc" value="vb"></center></td></tr>
+<tr><td>영양균형</td><td><center><input type="radio" name="formf" value="vg"></center></td><td><center><input type="radio" name="formf" value="g"></center></td><td><center><input type="radio" name="formf" value="n"></center></td><td><center><input type="radio" name="formf" value="b"></center></td><td><center><input type="radio" name="formf" value="vb"></center></td></tr>
+<tr><td>식사환경</td><td><center><input type="radio" name="forme" value="vg"></center></td><td><center><input type="radio" name="forme" value="g"></center></td><td><center><input type="radio" name="forme" value="n"></center></td><td><center><input type="radio" name="forme" value="b"></center></td><td><center><input type="radio" name="forme" value="vb"></center></td></tr>
+</table>
+<h3>기타 개선 요구</h3>
+<textarea name="feedback" cols="50" rows="5"></textarea><br>
+<h3>먹고싶은 음식</h3>
+<textarea name="wantfood" cols="50" rows="5"></textarea><br>
+            <input type="submit" name="submit" value="제출">
+            <input type="reset" name="reset" value="초기화">
+        </form>
+</body>
+</html>
