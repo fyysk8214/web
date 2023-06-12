@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: greenyellow;
+            width: 150px;
+            height: 150px;
+        }
+        .container{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        .transformed{
+            backface-visibility: visible;
+            transform-origin: 50% 42%;
+            transition: rotateY 5s;
+            transform: perspective(500px) rotateY(59deg);
+        }
+        div:hover{
+            transition: rotateY 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="transformed"></div>
+    </div>
+</body>
+</html>
