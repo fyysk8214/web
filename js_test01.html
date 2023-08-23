@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>버튼을 누르면 문자가 출력됩니다.</h1>
+
+    <h1 id="test">문자 출력 영역</h1>
+    <button onclick="strprint()">문자 출력</button>
+
+    <h1 id="na">문자 출력 영역</h1>
+    <button onclick="nameprint()">문자열 출력</button>
+
+    <script>
+        let x=parseInt(prompt("첫번째 수"));
+        let y=parseInt(prompt("두번째 수"));
+        let z=x+y;
+        function strprint(){
+            document.getElementById("test").innerHTML=z;
+        }
+
+        let a=prompt("이름");
+        function nameprint(){
+            document.getElementById("na").innerHTML='welcome'+a;
+        }
+    </script>
+    
+</body>
+</html>
