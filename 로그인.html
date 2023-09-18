@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2 id="test"></h2>
+     <script>
+     document.getElementById("test").innerHTML="로그인 중"
+     let admin = ['admin','sunrin','guest']
+        function a (){
+            person = document.getElementById("in").value;
+         for (i = 0; i<admin.length;i++) {
+         if (person==admin[i]) {
+             document.getElementById("test").innerHTML = "로그인 성공";
+             break;
+            }
+            
+        }
+    }
+    </script>
+    <input type="text" id="in">
+    <button onclick="a()">로그인</button>
+</body>
+</html>
