@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>테이블에 행과 셀 추가하기</title>
+</head>
+<body>
+    <table id="myTable" border="1px">
+        <tr>
+            <td>(1,1)</td>
+            <td>(1,2)</td>
+        </tr>
+        <tr>
+            <td>(2,1)</td>
+            <td>(2,2)</td>
+        </tr>
+    </table>
+
+    <button onclick="addRow()">행 추가</button>
+    <button onclick="addCell()">셀 추가</button>
+
+    <script>
+        function addRow() {
+            var table = document.getElementById("myTable");
+            var newRow = table.insertRow(-1); // -1은 마지막 행에 추가함을 의미
+
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+
+            cell1.innerHTML = "(1,1)";
+            cell2.innerHTML = "(1,2)";
+        }
+
+        function addCell() {
+            var table = document.getElementById("myTable");
+            var rows = table.getElementsByTagName('tr'); // 모든 행 가져오기
+
+            for (var i = 0; i < rows.length; i++) {
+                var newRow = rows[i].insertCell(-1); // -1은 마지막 셀에 추가함을 의미
+                newRow.innerHTML = "("+i+",3)";
+            }
+        }
+    </script>
+</body>
+</html>
