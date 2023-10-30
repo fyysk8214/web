@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #this{
+            width: 12rem;
+            height: 4rem;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<script>
+    let obj=document.getElementById("this");
+    function mo(obj){
+        obj.innerHTMl="감사합니다"
+    }
+    function mou(obj){
+        obj.innerHTMl="마우스를 올려주세요"
+    }
+</script>
+<body>
+    <div id="this" onmouseover="mo(this)" onmouseout="mou(this)">
+       마우스를 올려주세요
+    </div>
+</body>
+</html>
