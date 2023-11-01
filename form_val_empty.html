@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function checkNotEmpty(field) {
+        if (field.value.lenght==0) {
+            alert("문자를 입력해주세요.");
+            field.focus();
+            return false;
+        }
+        return true;
+
+    }
+</script>
+<form>
+    이름:    <input type='text' id='user'/>
+    <input type='button'
+        onclick="checkNotEmpty(document.getElementById('user'))"
+        value='확인' />
+</form>
+</body>
+</html>
