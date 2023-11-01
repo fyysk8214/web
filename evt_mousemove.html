@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #img1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="커비.jpg" onmousemove="sub(event)" id="img1" alt="no img"><br>
+    <p id="test"></p>
+    <script>
+        function sub(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            let coor = "좌표: (" + x + "," + y + ")";
+            document.getElementById("test").innerHTML = coor;
+        }
+    </script>
+</body>
+
+</html>

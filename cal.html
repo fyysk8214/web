@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>  
+    let a,b,c;
+    let d;
+    function ca(){   
+    a=Math.floor(Math.random()*(10-1)+1);
+    b=Math.floor(Math.random()*(10-1)+1);
+    c=Math.floor(Math.random()*(10-1)+1);
+    let r,ra;
+    r=Math.floor(Math.random()*(4-1)+1);
+    ra=Math.floor(Math.random()*(4-1)+1);
+        switch(r){
+        case 1:switch(ra){case 1:d=a+b+c; document.getElementById("problem").value=a+"+"+b+"+"+c; break;
+                          case 2:d=a+b-c; document.getElementById("problem").value=a+"+"+b+"-"+c; break;
+                          case 3:d=a+b*c; document.getElementById("problem").value=a+"+"+b+"*"+c; break;}; break;
+        case 2:switch(ra){case 1:d=a-b+c; document.getElementById("problem").value=a+"-"+b+"+"+c; break;
+                          case 2:d=a-b-c; document.getElementById("problem").value=a+"-"+b+"-"+c; break;
+                          case 3:d=a-b*c; document.getElementById("problem").value=a+"-"+b+"*"+c; break;}; break;
+        case 3:switch(ra){case 1:d=a*b+c; document.getElementById("problem").value=a+"*"+b+"+"+c; break;
+                          case 2:d=a*b-c; document.getElementById("problem").value=a+"*"+b+"-"+c; break;
+                          case 3:d=a*b*c; document.getElementById("problem").value=a+"*"+b+"*"+c; break;}; break;
+    }
+    }
+ function cal() {
+ if(document.getElementById("answer").value==d){
+    alert("정답입니다.");
+    }
+    else{
+        alert("틀렸습니다. 정답은"+d);
+    }
+ }
+</script>
+</head>
+<body>
+        <h1>Math Quiz</h1>
+        
+        <input type="text" id="problem" value="" > <button  onclick="ca()">문제 생성</button><br>
+        <input type="text" id="answer">
+        <button onclick="cal()">정답 알아보기</button>
+</body>
