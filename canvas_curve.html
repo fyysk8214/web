@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+    <script>
+        let canvas = document.getElementById('myCanvas');
+        let context = canvas.getContext('2d');
+        context.beginPath();
+        context.moveTo(90, 130);
+        context.bezierCurveTo(140, 10, 288, 10, 288, 130);
+        context.lineWidth = 10;
+        context.strokeStyle = 'black';
+        context.stroke();
+        context.beginPath();
+        context.moveTo(300, 330);
+        context.bezierCurveTo(100, 10, 200, 10, 200, 150);
+        context.lineWidth = 10;
+        context.strokeStyle = "#ddd";
+        context.stroke();
+        </script>
+    </body>
+    </html>
